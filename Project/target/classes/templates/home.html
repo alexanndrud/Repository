@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Acasa</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+
+<nav class="navbar">
+    <img th:src="@{/logo.png}" alt="Logo" class="logo">
+
+    <ul>
+        <li><a th:href="@{/}">Acasă</a></li>
+        <li><a th:href="@{/form}">Formular</a></li>
+        <li><a th:href="@{/calculator}">Calculator venituri</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+        <li><a th:href="@{/despre}">Despre noi</a></li>
+        <li><a th:href="@{/inchiriere}">Inchiriaza</a></li>
+    </ul>
+</nav>
+
+<section class="home-section">
+    <div class="home-content">
+        <h1 class="home-title" th:text="${message}">L.V.S. TEAM</h1>
+        <p class="home-text">Bun venit la L.V.S. – Flota ta de încredere pentru Uber și Bolt!</p>
+        <p class="home-text">Indiferent dacă vrei să devii șofer sau cauți o flotă serioasă care să îți asigure stabilitate și transparență, ai ajuns în locul potrivit.</p>
+        <p class="home-text">Oferim suport complet pentru șoferii noștri, un sistem clar de calcul al veniturilor și un proces simplu de înscriere.</p>
+        <p class="home-text"> Alătură-te echipei noastre și începe să câștigi astăzi!</p>
+    </div>
+</section>
+</body>
+</html>

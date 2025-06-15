@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+<nav class="navbar">
+    <img th:src="@{/logo.png}" alt="Logo" class="logo">
+
+    <ul>
+        <li><a th:href="@{/}">Acasă</a></li>
+        <li><a th:href="@{/form}">Formular</a></li>
+        <li><a th:href="@{/calculator}">Calculator venituri</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+        <li><a th:href="@{/despre}">Despre noi</a></li>
+        <li><a th:href="@{/inchiriere}">Inchiriaza</a></li>
+    </ul>
+</nav>
+<div class="contact">
+<h2 class="contact-title">Contactează-ne</h2>
+
+<p class="contact-description">Ne puteți contacta pentru orice întrebare sau colaborare. Suntem aici să vă ajutăm!</p>
+
+<div class="contact-info">
+    <p><strong>📧 Email:</strong> <a href="mailto:lalvision@lalvision.ro" class="contact-link">lalvision@lalvision.ro</a></p>
+    <p><strong>📞 Telefon:</strong> <a href="tel:+40748189701" class="contact-link">+40 748 189 701</a></p>
+</div>
+
+<h3 class="contact-form-title">Trimite-ne un mesaj</h3>
+
+<form action="/submitContact" method="post" class="contact-form">
+    <label for="nume" class="contact-label">Nume și Prenume:</label>
+    <input type="text" id="nume" name="nume" pattern="[A-Za-z\s]+" required class="contact-input"><br><br>
+
+    <label for="email" class="contact-label">Email:</label>
+    <input type="email" id="email" name="email" required class="contact-input"><br><br>
+
+    <label for="mesaj" class="contact-label">Mesaj:</label><br>
+    <textarea id="mesaj" name="mesaj" rows="4" cols="50" class="contact-textarea"></textarea><br><br>
+
+    <button type="submit" class="contact-button">Trimite</button>
+</form>
+</div>
+</body>
+</html>

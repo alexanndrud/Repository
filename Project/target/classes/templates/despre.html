@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Despre noi</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+</head>
+<body>
+<nav class="navbar">
+    <img th:src="@{/logo.png}" alt="Logo" class="logo">
+
+    <ul>
+        <li><a th:href="@{/}">Acasă</a></li>
+        <li><a th:href="@{/form}">Formular</a></li>
+        <li><a th:href="@{/calculator}">Calculator venituri</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+        <li><a th:href="@{/despre}">Despre noi</a></li>
+        <li><a th:href="@{/inchiriere}">Inchiriaza</a></li>
+    </ul>
+</nav>
+
+<section class="about-section">
+    <div class="about-content">
+    <h2 class="about-title">Despre Noi</h2>
+    <p class="about-text">L.V.S. este operator de transport alternativ persoane autorizat ARR. În calitate de partener Uber şi Bolt, oferim posibilitatea şoferilor colaboratori să lucreze pentru oricare dintre cele două aplicaţii, respectând toate reglementările legale.</p>
+    <p class="about-text">Suntem dedicați transparenței și integrității în toate acțiunile noastre. Veți ști întotdeauna cum sunt utilizate fondurile dvs. și veți avea acces la rapoarte detaliate.</p>
+    <p class="about-text">Suntem prezenţi în mai multe oraşe:</p>
+    <ul class="city-list">
+        <li>Galati</li>
+        <li>Braila</li>
+        <li>Iași</li>
+        <li>Brasov</li>
+    </ul>
+    </div>
+</section>
+
+</body>
+</html>

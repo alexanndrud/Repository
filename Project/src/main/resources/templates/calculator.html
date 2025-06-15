@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculator Venituri</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+<nav class="navbar">
+    <img th:src="@{/logo.png}" alt="Logo" class="logo">
+
+    <ul>
+        <li><a th:href="@{/}">Acasă</a></li>
+        <li><a th:href="@{/form}">Formular</a></li>
+        <li><a th:href="@{/calculator}">Calculator venituri</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+        <li><a th:href="@{/despre}">Despre noi</a></li>
+        <li><a th:href="@{/inchiriere}">Inchiriaza</a></li>
+    </ul>
+</nav>
+
+<section class="calculator-section">
+    <h2 class="calculator-title">Calculator Venituri</h2>
+    <form action="/calculator" method="post" class="calculator-form">
+        <label class="form-label">Ore pe zi:</label>
+        <input type="number" name="hoursPerDay" required class="form-input">
+
+        <label class="form-label">Zile pe săptămână:</label>
+        <input type="number" name="daysPerWeek" required class="form-input">
+
+        <label class="form-label">Tip vehicul:</label>
+        <select name="vehicleType" class="form-select">
+            <option value="Electric">Electric (80 RON/oră)</option>
+            <option value="Combustie">Combustie (60 RON/oră)</option>
+            <option value="Premium">Premium (75 RON/oră)</option>
+        </select>
+
+        <label class="form-label">Cost combustibil/oră (RON):</label>
+        <input type="number" step="0.01" name="fuelCost" required class="form-input">
+
+        <label class="form-label">Comision flotă (%):</label>
+        <input type="number" step="0.1" name="fleetCommission" required class="form-input">
+
+        <button type="submit" class="form-button">Calculează</button>
+    </form>
+
+    <div th:if="${estimatedIncome}" class="income-result">
+        <h3>Venitul estimat lunar: <span th:text="${estimatedIncome} + ' RON'" class="income-value"></span></h3>
+    </div>
+</section>
+</body>
+</html>

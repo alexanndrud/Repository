@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Succes</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+<div class="success">
+    <h2 th:text="${message}">Mesaj implicit</h2>
+    <a href="/contact" class="button">Înapoi la contact</a>
+</div>
+
+</body>
+</html>

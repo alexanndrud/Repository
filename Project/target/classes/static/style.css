@@ -1,0 +1,422 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.home-section {
+    background-image: url('simply.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mută conținutul mai jos */
+    flex-direction: column;
+}
+.home-content {
+    background: none; /* Elimină fundalul alb */
+    padding: 0; /* Elimină spațiile interioare */
+    border-radius: 0; /* Elimină colțurile rotunjite */
+    max-width: 600px; /* Păstrează lățimea maximă pentru lizibilitate */
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Text negru pentru contrast */
+    margin-top: 150px; /* Mută textul mai jos dacă este necesar */
+}
+.home-content h2,
+.home-content p {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Adaugă o umbră albă pentru lizibilitate */
+}
+
+
+
+.home-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.home-text {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Bara de navigație */
+.navbar {
+    background-color: #008000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrează meniul */
+    position: relative;
+}
+
+.logo {
+    width: 80px; /* Ajustează dimensiunea după nevoie */
+    height: auto;
+    position: absolute;
+    left: 15px; /* Asigură că logo-ul este lipit de marginea stângă */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    border-right: black 1px solid;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Fundal pentru secțiunea principală */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Secțiunea Despre Noi */
+.about-section {
+    background-image: url('simply.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mută conținutul mai jos */
+    flex-direction: column;
+}
+.about-content {
+    background: none; /* Elimină fundalul alb */
+    padding: 0; /* Elimină spațiile interioare */
+    border-radius: 0; /* Elimină colțurile rotunjite */
+    max-width: 600px; /* Păstrează lățimea maximă pentru lizibilitate */
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Text negru pentru contrast */
+    margin-top: 150px; /* Mută textul mai jos dacă este necesar */
+}
+.about-content h2,
+.about-content p,
+.about-content li {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Adaugă o umbră albă pentru lizibilitate */
+}
+
+
+
+.about-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.city-list {
+    list-style: none; /* Elimină stilul implicit al listei */
+    padding: 0;
+    text-align: center; /* Centrează textul */
+}
+
+.city-list li {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrează textul și bila pe orizontală */
+    gap: 8px; /* Spațiu între bila și text */
+}
+
+.city-list li::before {
+    content: "•"; /* Adaugă punctul */
+    color: green; /* Schimbă culoarea bilei */
+    font-size: 20px; /* Mărește bila */
+}
+/* Sectiune calculator */
+.calculator-title{
+    background-color: none;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+.calculator-section {
+    background-image: url('simply.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 20px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Mută conținutul mai jos */
+        flex-direction: column;
+    }
+
+.calculator-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Formular  calculator*/
+.calculator-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 500px;
+      margin: 20px auto;
+  }
+
+  .form-label {
+      font-weight: bold;
+      margin-top: 10px;
+  }
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+.form-button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-button:hover {
+    background: darkgreen;
+}
+
+/* Venit estimat */
+.income-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.income-value {
+    color: green;
+}
+/*Formular initial*/
+/* Formular */
+.form-section {
+    background-image: url('simply.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mută conținutul mai jos */
+    flex-direction: column;
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-input, .form-select, .form-textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 5px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    background-color: darkgreen;
+}
+
+/*Contact*/
+.contact {
+    background-image: url('simply.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mută conținutul mai jos */
+    flex-direction: column;
+}
+.contact-title {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    background-color: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: none;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-link {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-form-title{
+    text-align:center;
+}
+.contact-form {
+    background-color: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-input, .contact-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #0f0;
+    background-color: #111;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: darkgreen;
+}
+
+
+//Succes page
+body {
+    background-color: green; /* Verde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.success {
+    background-color:green;
+    text-align: center;
+    test-color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Albastru */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/*Inchiriere page*/
+.inchiriere-section{
+    background-image: url('simply.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mută conținutul mai jos */
+    flex-direction: column;
+}
+

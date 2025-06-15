@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Acasa</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+
+<nav class="navbar">
+    <img th:src="@{/logo.png}" alt="Logo" class="logo">
+
+    <ul>
+        <li><a th:href="@{/}">Acasă</a></li>
+        <li><a th:href="@{/form}">Formular</a></li>
+        <li><a th:href="@{/calculator}">Calculator venituri</a></li>
+        <li><a th:href="@{/contact}">Contact</a></li>
+        <li><a th:href="@{/despre}">Despre noi</a></li>
+        <li><a th:href="@{/inchiriere}">Inchiriaza</a></li>
+    </ul>
+</nav>
+
+<section class="inchiriere-section">
+    <div class="inchiriere-content">
+
+    </div>
+</section>
+</body>
+</html>
